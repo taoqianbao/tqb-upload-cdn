@@ -2,6 +2,10 @@
 
 一个发送图片上图床的组件，能够接受一个本地文件地址或者线上地址，在文件上传成功后本地会留下缓存
 
+```sh
+npm install --save tqb-upload-cdn
+```
+
 ## A Simple Example
 
 引用配置文件
