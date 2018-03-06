@@ -1,0 +1,44 @@
+{
+  "name": "tqb-upload-cdn",
+  "version": "1.0.2",
+  "description": "一个发送图片上cdn的组件，能够接受一个本地文件地址或者线上地址，在文件上传成功后本地会留下缓存",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "cd test && npm run compile && babel-node test",
+    "compile": "babel --presets es2015 -d lib/ src/ --stage 0 --ignore='test.js'",
+    "prepublish": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taoqianbao/tqb-upload-cdn.git"
+  },
+  "keywords": [
+    "tqb",
+    "upload",
+    "static",
+    "file",
+    "cdn"
+  ],
+  "author": "taoqianbao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taoqianbao/tqb-upload-cdn/issues"
+  },
+  "homepage": "https://github.com/taoqianbao/tqb-upload-cdn#readme",
+  "devDependencies": {
+    "babel": "^6.3.26",
+    "babel-cli": "^6.4.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-es2015": "^6.3.13"
+  },
+  "dependencies": {
+    "debug": "^3.1.0",
+    "g-debug": "0.0.0",
+    "g-file": "0.0.2",
+    "lodash": "^4.0.0",
+    "lokijs": "^1.3.11",
+    "md5": "^2.0.0",
+    "q": "^1.4.1",
+    "request": "^2.67.0"
+  }
+}
